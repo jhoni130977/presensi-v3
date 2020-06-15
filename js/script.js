@@ -11,7 +11,7 @@ function aktif() {
 						`)
      $.ajax({
         //url: 'https://smk-smeatdkosgoro2pdg.sch.id/lulusapi/aktifapi.php',
-		url: 'http://localhost/PRESENSI/2/lulusapi/aktifapi.php',
+		url: 'https://inspektorat.padang.go.id/presensi/2/lulusapi/aktifapi.php',
         type: 'get',
         dataType: 'json',
         success: function(result){
@@ -56,7 +56,7 @@ function aktif() {
 					$("#form-user").on('submit',(function(e) {
 						e.preventDefault();
 						$.ajax({
-							url: "https://smk-smeatdkosgoro2pdg.sch.id/lulusapi/editaktif.php",
+							url: 'https://inspektorat.padang.go.id/presensi/2/lulusapi/editaktif.php",
 							//url: "https://localhost/lulusapi/editaktif.php",
 							type: "POST",
 							data:  new FormData(this),
