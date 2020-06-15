@@ -11,7 +11,7 @@ function aktif() {
 						`)
      $.ajax({
         //url: 'https://smk-smeatdkosgoro2pdg.sch.id/lulusapi/aktifapi.php',
-		url: 'https://inspektorat.padang.go.id/presensi/2/lulusapi/aktifapi.php',
+		url: 'http://localhost/PRESENSI/2/lulusapi/aktifapi.php',
         type: 'get',
         dataType: 'json',
         success: function(result){
@@ -56,7 +56,7 @@ function aktif() {
 					$("#form-user").on('submit',(function(e) {
 						e.preventDefault();
 						$.ajax({
-							url: 'https://inspektorat.padang.go.id/presensi/2/lulusapi/editaktif.php",
+							url: "https://smk-smeatdkosgoro2pdg.sch.id/lulusapi/editaktif.php",
 							//url: "https://localhost/lulusapi/editaktif.php",
 							type: "POST",
 							data:  new FormData(this),
@@ -96,7 +96,7 @@ $('#data-list').html(` <div class="d-flex justify-content-center">
 $('#data-list1').html(``);
  $.ajax({
         //url: 'https://smk-smeatdkosgoro2pdg.sch.id/lulusapi/tampil5.php',
-		url: 'https://inspektorat.padang.go.id/presensi/2/lulusapi/tampil5.php',
+		url: 'http://192.168.43.120/PRESENSI/2/lulusapi/tampil5.php',
 		//url: 'http://localhost/PRESENSI/2/lulusapi/tampil5.php',
         type: 'get',
         dataType: 'json',
@@ -184,7 +184,7 @@ function lulus() {
 						e.preventDefault();						
 						$.ajax({
 							//url: "https://smk-smeatdkosgoro2pdg.sch.id/lulusapi/editlulus.php",
-							url: 'https://inspektorat.padang.go.id/presensi/2/lulusapi/editlulus.php",
+							url: "http://192.168.43.120/PRESENSI/2/lulusapi/editlulus.php",
 							type: "POST",
 							data:  new FormData(this),
 							contentType: false,
