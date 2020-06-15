@@ -144,7 +144,7 @@ $('#data-list1').html(``);
 											<tr><td><b>Jam :</td></tr><tr><td style='padding-left:35px';><font size=3 color=blue><b> ` + data.jam + `
 											<input type=hidden name=jam id=jam value= ` + data.jam + ` ></td></tr>
 
-											<tr><td><b>Foto Selfie :</td></tr><tr><td style='padding-left:35px';><b><font size=2> <input type=file name=file required></td></tr>
+											<tr><td><b>Foto Selfie :</td></tr><tr><td style='padding-left:35px';><b><font size=2> <input type=file name=file accept='image/*' capture='camera' required></td></tr>
 											<tr><td colspan=2 height=50><center><input type=submit class='btn btn-primary btn-sm' value=Simpan ></td></tr>
 											<tr><td>&nbsp</td></tr>
 										</table><br><p>								
