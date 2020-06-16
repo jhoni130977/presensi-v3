@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+	<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <title>Presensi</title>
+	<style> body { background-color : #ffff88; }  </style>
+	<script type="text/javascript" src="cordova.js"></script>  
+	<script type='text/javascript' src='jquery-3.0.0.js' ></script>
+	<script type="text/javascript"">
+	function onLoad()
+        {
+           document.addEventListener("deviceready", onDeviceReady, true);
+        }
+	function exitFromApp()
+         {
+            navigator.app.exitApp();
+         }
+	</script>
+	
+</head>
+
+<body bgcolor="yellow">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<div class=container>
+	    <img src="logo.png" height="34">
+		<a class="navbar-brand" href="#">Presensi</a>
+		<button onclick="exitFromApp()" class="btn btn-dark"><b>X</b></button>
+        </div>
+	</div>    
+    </nav>
+    <div class="container">
+        <div class="row mt-3 justify-content-center">
+            <div class="col-md-8">
+                <h4 class=text-center>Presensi Online</h4>
+				<h4 class=text-center>INSPEKTORAT KOTA PADANG</h4>
+				
+            </div>
+        </div>
+			<hr>
+        <div class="container" id="data-list2a"> </div>
+		<center>
+			<div class="input-group mb-3 mt-3 justify-content-center">
+				<input type="text" class="form-control-sm" placeholder="Inputkan NIP / NUP" id="search-input" >
+					<div class="input-group-append">
+						<button class="btn btn-primary btn-sm" type="button" id="search-button">Proses</button>	
+						
+						
+					</div>					  
+			</div>
+			
+			<center><font color=red><b><i>Pastikan HP Anda terhubung ke internet !</i></b></font></center>
+			<hr>
+		<!-- <div class="container" id="data-list2"> </div> -->
+		<div class="container" id="data-list1"> </div>
+		<div class="container" id="data-list"> </div>
+		<div class="container" id="data-list3"> </div>
+        </div>
+		
+    </div>
+		
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="js/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
