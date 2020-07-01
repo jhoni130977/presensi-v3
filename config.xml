@@ -45,6 +45,10 @@
     <splash src="screen.png" density="port-xxhdpi"/>
     <splash src="screen.png" density="port-xxxhdpi"/>
   </platform>
+  <strong><preference name="SplashScreen" value="screen" /></strong>
+  <strong> <preference name="AutoHideSplashScreen" value="false" /></strong>
+  <strong> <preference name="FadeSplashScreen" value="false" /></strong>
+
   <platform name="ios">
     <icon src="www/res/icon/ios/icon.png" platform="ios" width="57" height="57"/>
     <icon src="www/res/icon/ios/icon@2x.png" platform="ios" width="114" height="114"/>
