@@ -16,6 +16,9 @@
       <-e-script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <-e-script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   
   
   <script>
@@ -24,7 +27,38 @@ window.location.hash="Again-No-back-button";//again because google chrome don't 
 window.onhashchange=function(){window.location.hash="no-back-button";}
 </script>
 </HEAD>
-<BODY >
+<BODY ><script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+ <script type="text/javascript" charset="utf-8">
+ 
+// Wait for device API libraries to load
+ //
+ document.addEventListener("deviceready", onDeviceReady, false);
+ 
+// device APIs are available
+ //
+ function onDeviceReady() {
+ setTimeout(function() {
+ navigator.splashscreen.hide();
+ }, 10000);
+ }
+ 
+</script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+ <script type="text/javascript" charset="utf-8">
+ 
+// Wait for device API libraries to load
+ //
+ document.addEventListener("deviceready", onDeviceReady, false);
+ 
+// device APIs are available
+ //
+ function onDeviceReady() {
+ setTimeout(function() {
+ navigator.splashscreen.hide();
+ }, 10000);
+ }
+ 
+</script>
     <div class="col-md-2"></div>
     
     <!-- <h1>Menampilkan Halaman Website Lain Dengan Embed Bootstrap</h1> -->
